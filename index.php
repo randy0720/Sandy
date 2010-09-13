@@ -8,12 +8,15 @@
     require_once('classes/security.class.php');
     require_once('config.php');
 
+    This line is being changed.
         // Not only will array_merge and array_keys give a warning if
 	// a parameter is not an array, array_merge will actually fail.
 	// So we check if _SESSION has been initialized.
 	if (!isset($_SESSION) || !is_array($_SESSION)) {
 		$_SESSION = array();
 	}
+
+Now this line is being changed.
 	$_SESSION["TopBackgroundColor"] = "navy";
    	$_SESSION["LocID"] = 1;
 	$_SESSION["LocName"] = "Location Name Here, Inc.";
